@@ -1,0 +1,38 @@
+﻿@page "/search"
+@inject HttpClient Http
+@using BlazorEngRusConvert.Models
+@rendermode RenderMode.InteractiveServer
+
+<h3>Search</h3>
+<input @bind="searchInput" placeholder="Введите слово..." />
+<button @onclick="SearchWords">Поиск</button>
+
+<ul>
+    @foreach(var item in list)
+    {
+        <li>@item</li>
+    }
+</ul>
+
+@code {
+    private string searchInput = "";
+    List<string>? list = new List<string>();
+
+    protected override void OnInitialized()
+    {
+        list = Http.GetFromJsonAsync<List<string>>("https://localhost:7045/api/Word").Result;
+        
+    }
+
+    private async Task SearchWords()
+    {
+        if (!string.IsNullOrEmpty(searchInput))
+        {
+            var response = await Http.PostAsJsonAsync("https://localhost:7045/api/Word", searchInput);
+            if (response.IsSuccessStatusCode)
+            {
+                list = await response.Content.ReadFromJsonAsync<List<string>>();
+            }
+        }
+    }
+}

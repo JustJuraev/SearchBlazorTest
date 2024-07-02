@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\BlazorEngRusConvert\\BlazorEngRusConvert\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BlazorEngRusConvert.bundle.scp.css",
+      "PackagePath": "staticwebassets\\BlazorEngRusConvert.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\BlazorEngRusConvert\\BlazorEngRusConvert\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\BlazorEngRusConvert\\BlazorEngRusConvert\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\BlazorEngRusConvert\\BlazorEngRusConvert\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\source\\repos\\BlazorEngRusConvert\\BlazorEngRusConvert\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BlazorEngRusConvert.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.BlazorEngRusConvert.props",
+      "PackagePath": "build\\BlazorEngRusConvert.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.BlazorEngRusConvert.props",
+      "PackagePath": "buildMultiTargeting\\BlazorEngRusConvert.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.BlazorEngRusConvert.props",
+      "PackagePath": "buildTransitive\\BlazorEngRusConvert.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
