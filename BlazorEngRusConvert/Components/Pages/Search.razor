@@ -8,9 +8,12 @@
 <button @onclick="SearchWords">Поиск</button>
 
 <ul>
-    @foreach(var item in list)
+    @if (list != null)
     {
-        <li>@item</li>
+       @foreach(var item in list)
+       {
+           <li>@item</li>
+       }
     }
 </ul>
 
@@ -18,11 +21,11 @@
     private string searchInput = "";
     List<string>? list = new List<string>();
 
-    protected override void OnInitialized()
-    {
-        list = Http.GetFromJsonAsync<List<string>>("https://localhost:7045/api/Word").Result;
+    // protected override void OnInitialized()
+    // {
+    //     list = Http.GetFromJsonAsync<List<string>>("https://localhost:7045/api/Word").Result;
         
-    }
+    // }
 
     private async Task SearchWords()
     {
